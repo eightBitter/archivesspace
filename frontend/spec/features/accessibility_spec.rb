@@ -133,7 +133,7 @@ describe 'Accessibility', js: true , db: 'accessibility' do
       visit "/resources/1"
 
       find("#merge-dropdown button.merge-action").click
-      
+
       within "div#merge-dropdown" do
         list = find("ul[role='none']")
         expect(list).to_not be_nil
@@ -145,7 +145,7 @@ describe 'Accessibility', js: true , db: 'accessibility' do
       visit "/resources/1"
 
       find("#transfer-dropdown button.transfer-action").click
-      
+
       within "div#transfer-dropdown" do
         list = find("ul[role='none']")
         expect(list).to_not be_nil
